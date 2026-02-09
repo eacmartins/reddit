@@ -1,0 +1,106 @@
+{
+  "n8n": [
+    {
+      "subreddit": "n8n",
+      "title": "someone tried selling me an ai automation for $6,000 and i ended up building it myself",
+      "url": "https://i.redd.it/ac0c8hak8rhg1.jpeg",
+      "score": 239,
+      "num_comments": 57,
+      "created_utc": 1770331534.0,
+      "engagement": 296,
+      "permalink": "https://reddit.com/r/n8n/comments/1qx08uu/someone_tried_selling_me_an_ai_automation_for/"
+    },
+    {
+      "subreddit": "n8n",
+      "title": "things i learned after 2 years of n8n client work",
+      "url": "https://www.reddit.com/r/n8n/comments/1qyvqig/things_i_learned_after_2_years_of_n8n_client_work/",
+      "score": 165,
+      "num_comments": 27,
+      "created_utc": 1770514574.0,
+      "engagement": 192,
+      "permalink": "https://reddit.com/r/n8n/comments/1qyvqig/things_i_learned_after_2_years_of_n8n_client_work/"
+    },
+    {
+      "subreddit": "n8n",
+      "title": "my n8n AI agent burned $63 in API credits retrying the same failed node 800 times overnight",
+      "url": "https://www.reddit.com/r/n8n/comments/1qy9eyv/my_n8n_ai_agent_burned_63_in_api_credits_retrying/",
+      "score": 56,
+      "num_comments": 53,
+      "created_utc": 1770456203.0,
+      "engagement": 109,
+      "permalink": "https://reddit.com/r/n8n/comments/1qy9eyv/my_n8n_ai_agent_burned_63_in_api_credits_retrying/"
+    },
+    {
+      "subreddit": "n8n",
+      "title": "I\u2019ve wanted to learn AI automation for 6 months, but I keep delaying because I don\u2019t know coding \u2014 where should I start?",
+      "url": "https://www.reddit.com/r/n8n/comments/1qwvjbe/ive_wanted_to_learn_ai_automation_for_6_months/",
+      "score": 28,
+      "num_comments": 38,
+      "created_utc": 1770320990.0,
+      "engagement": 66,
+      "permalink": "https://reddit.com/r/n8n/comments/1qwvjbe/ive_wanted_to_learn_ai_automation_for_6_months/"
+    },
+    {
+      "subreddit": "n8n",
+      "title": "I tried \u201cvibe coding\u201d a full SaaS with Claude + n8n \u2014 this surprised me",
+      "url": "https://www.reddit.com/r/n8n/comments/1qxyic9/i_tried_vibe_coding_a_full_saas_with_claude_n8n/",
+      "score": 23,
+      "num_comments": 29,
+      "created_utc": 1770422962.0,
+      "engagement": 52,
+      "permalink": "https://reddit.com/r/n8n/comments/1qxyic9/i_tried_vibe_coding_a_full_saas_with_claude_n8n/"
+    }
+  ],
+  "automation": [
+    {
+      "subreddit": "automation",
+      "title": "LinkedIn restricted my account 3 times in a year - what finally worked",
+      "url": "https://www.reddit.com/r/automation/comments/1qxfl8r/linkedin_restricted_my_account_3_times_in_a_year/",
+      "score": 233,
+      "num_comments": 23,
+      "created_utc": 1770378797.0,
+      "engagement": 256,
+      "permalink": "https://reddit.com/r/automation/comments/1qxfl8r/linkedin_restricted_my_account_3_times_in_a_year/"
+    },
+    {
+      "subreddit": "automation",
+      "title": "Can someone enlighten me, how is it cheaper to build data centers in space than on earth?",
+      "url": "https://i.redd.it/7jq7b9b8zahg1.jpeg",
+      "score": 52,
+      "num_comments": 163,
+      "created_utc": 1770134827.0,
+      "engagement": 215,
+      "permalink": "https://reddit.com/r/automation/comments/1quvyve/can_someone_enlighten_me_how_is_it_cheaper_to/"
+    },
+    {
+      "subreddit": "automation",
+      "title": "From 'I should automate this' to actually doing it - my 2025-2026 journey and what finally worked",
+      "url": "https://www.reddit.com/r/automation/comments/1qvpdbb/from_i_should_automate_this_to_actually_doing_it/",
+      "score": 38,
+      "num_comments": 16,
+      "created_utc": 1770213773.0,
+      "engagement": 54,
+      "permalink": "https://reddit.com/r/automation/comments/1qvpdbb/from_i_should_automate_this_to_actually_doing_it/"
+    },
+    {
+      "subreddit": "automation",
+      "title": "Need advice on automating marketing reports that require SQL",
+      "url": "https://www.reddit.com/r/automation/comments/1qwj6yh/need_advice_on_automating_marketing_reports_that/",
+      "score": 28,
+      "num_comments": 18,
+      "created_utc": 1770292092.0,
+      "engagement": 46,
+      "permalink": "https://reddit.com/r/automation/comments/1qwj6yh/need_advice_on_automating_marketing_reports_that/"
+    },
+    {
+      "subreddit": "automation",
+      "title": "Using an AI call assistant unexpectedly doubled our sales",
+      "url": "https://www.reddit.com/r/automation/comments/1qvhuv8/using_an_ai_call_assistant_unexpectedly_doubled/",
+      "score": 20,
+      "num_comments": 23,
+      "created_utc": 1770189089.0,
+      "engagement": 43,
+      "permalink": "https://reddit.com/r/automation/comments/1qvhuv8/using_an_ai_call_assistant_unexpectedly_doubled/"
+    }
+  ]
+}
