@@ -35,10 +35,21 @@ CREDENTIALS_FILE = "credentials.json"
 
 def initialize_firebase():
     try:
+        # Check for environment variable first (CI/CD)
+        firebase_creds_json = os.environ.get("FIREBASE_SERVICE_ACCOUNT")
+        if firebase_creds_json:
+            logger.info("Using Firebase credentials from environment variable")
+            cred_dict = json.loads(firebase_creds_json)
+            cred = credentials.Certificate(cred_dict)
+            firebase_admin.initialize_app(cred)
+            return firestore.client()
+
+        # Fallback to local file
         if not os.path.exists(CREDENTIALS_FILE):
-             logger.warning(f"Credentials file {CREDENTIALS_FILE} not found. Skipping Firestore upload.")
+             logger.warning(f"Credentials file {CREDENTIALS_FILE} not found and env var missing. Skipping Firestore upload.")
              return None
         
+        logger.info(f"Using Firebase credentials from file: {CREDENTIALS_FILE}")
         cred = credentials.Certificate(CREDENTIALS_FILE)
         firebase_admin.initialize_app(cred)
         return firestore.client()

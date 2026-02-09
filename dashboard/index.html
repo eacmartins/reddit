@@ -238,9 +238,27 @@
                         <WindowHeader title="Reddit_Insights_v1.0.exe" />
 
                         <div className="p-8 bg-white border-b-4 border-black">
-                            <h1 className="font-sans text-6xl md:text-7xl font-black bg-yellow-300 border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] p-4 inline-block transform -rotate-2 mb-8 uppercase">
-                                REDDIT INSIGHTS
-                            </h1>
+                            <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+                                <h1 className="font-sans text-5xl md:text-7xl font-black bg-yellow-300 border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] p-4 inline-block transform -rotate-2 uppercase">
+                                    REDDIT INSIGHTS
+                                </h1>
+                                <button
+                                    onClick={() => {
+                                        setLoading(true);
+                                        // Slight delay to show loading state
+                                        setTimeout(() => {
+                                            // Re-run the effect by unmounting/remounting or just calling load logic
+                                            // Ideally we extract load logic. For now, a reload is simplest or a state toggle.
+                                            // We will reload the page for a full refresh as it's the most robust way to reset connections.
+                                            window.location.reload();
+                                        }, 500);
+                                    }}
+                                    className="bg-green-400 hover:bg-green-300 text-black font-bold uppercase py-3 px-6 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all flex items-center gap-2"
+                                >
+                                    <span>↻ REFRESH DATA</span>
+                                </button>
+                            </div>
+
                             <p className="font-mono text-lg font-bold">
                                 > SYSTEM STATUS: ONLINE<br />
                                 > TRACKING: r/n8n, r/automation<br />
