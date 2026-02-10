@@ -232,7 +232,7 @@
             }
 
             return (
-                <div className="min-h-screen bg-blue-100 p-8 pb-32">
+                <div className="min-h-screen bg-blue-100 p-4 md:p-8 pb-32">
                     {/* Main Window Container */}
                     <div className="max-w-4xl mx-auto bg-white border-4 border-black shadow-[16px_16px_0px_0px_rgba(0,0,0,1)]">
                         <WindowHeader title="Reddit_Insights_v1.0.exe" />
@@ -260,9 +260,9 @@
                             </div>
 
                             <p className="font-mono text-lg font-bold">
-                                > SYSTEM STATUS: ONLINE<br />
-                                > TRACKING: r/n8n, r/automation<br />
-                                > DATA_SOURCE: <span className={source === 'FIRESTORE' ? 'text-green-600' : 'text-orange-600'}>{source}</span>
+                                &gt; SYSTEM STATUS: ONLINE<br />
+                                &gt; TRACKING: r/n8n, r/automation<br />
+                                &gt; DATA_SOURCE: <span className={source === 'FIRESTORE' ? 'text-green-600' : 'text-orange-600'}>{source}</span>
                             </p>
                         </div>
 

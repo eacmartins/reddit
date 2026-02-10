@@ -1,0 +1,5 @@
+firebase-admin>=6.0.0
+requests
+google-cloud-firestore
+flask
+firebase-functions
