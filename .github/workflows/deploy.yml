@@ -18,13 +18,33 @@ jobs:
           cache: 'npm'
           cache-dependency-path: functions/package-lock.json
 
-      - name: Install Firebase Tools
-        run: npm install -g firebase-tools
-
       - name: Create Service Account Key File
-        run: echo "$FIREBASE_SERVICE_ACCOUNT" > service-account.json
+        run: |
+          echo "$FIREBASE_SERVICE_ACCOUNT" > service-account.json
+          # Validate JSON and check project_id (swallows error if jq fails, but captures exit code)
+          if jq -e .project_id service-account.json > /dev/null; then
+            echo "Service account file created and is valid JSON."
+          else
+            echo "ERROR: Service account file is NOT valid JSON."
+            exit 1
+          fi
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_REDDIT_INSIGHTS_1 }}
+
+      - name: Debug Environment
+        run: |
+          echo "Node version: $(node -v)"
+          echo "NPM version: $(npm -v)"
+          echo "Firebase tools version: $(firebase --version)"
+          echo "Current directory: $(pwd)"
+          ls -R
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: service-account.json
+
+      - name: Verify Authentication
+        run: firebase projects:list --debug
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: service-account.json
 
       - name: Install Function Dependencies
         run: npm ci
