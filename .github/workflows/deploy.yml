@@ -27,4 +27,4 @@ jobs:
         with:
           args: deploy --project reddit-insights-1
         env:
-          GCP_SA_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          GCP_SA_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_REDDIT_INSIGHTS_1 }}
